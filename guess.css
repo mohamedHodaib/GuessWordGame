@@ -76,9 +76,9 @@ h1 {
             }
           }
           span {
-            font-size: clamp(10px, 1vw, 16px);
+            font-size: clamp(15px, 1.5vw, 20px);
             font-weight: bold;
-            margin-right: clamp(15px, 1.5vw, 20px);;
+            margin-right: 10px;
           }
         }
         .disabled-inputs {
