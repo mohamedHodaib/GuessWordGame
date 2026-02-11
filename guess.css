@@ -41,6 +41,7 @@ h1 {
     
     .guess-area {
       display: flex;
+      flex-direction: column;
       align-items: start;
       .inputs {
         > div {
@@ -185,4 +186,14 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+
+/* Responsive */
+@media (max-width:1190px) {
+  .guess-game {
+    flex-direction: column;
+    width: auto;
+    margin: 20px 10px 80px ;
+  }
 }
