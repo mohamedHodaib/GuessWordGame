@@ -40,6 +40,8 @@ h1 {
     margin: 20px auto;
     
     .guess-area {
+      display: flex;
+      align-items: start;
       .inputs {
         > div {
           margin-bottom: 15px;
