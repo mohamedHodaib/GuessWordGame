@@ -78,7 +78,7 @@ h1 {
           span {
             font-size: clamp(10px, 1vw, 16px);
             font-weight: bold;
-            margin-right: 10px;
+            margin-right: clamp(15px, 1.5vw, 20px);;
           }
         }
         .disabled-inputs {
@@ -166,7 +166,7 @@ h1 {
           }
         }
         .key-text {
-          font-size: clamp(10px, 1vw, 16px);
+          font-size: clamp(15px, 1.5vw, 20px);
           font-weight: bold;
         }
       }
