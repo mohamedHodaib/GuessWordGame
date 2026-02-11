@@ -76,7 +76,7 @@ h1 {
             }
           }
           span {
-            font-size: 1vw;
+            font-size: clamp(10px, 1vw, 16px);
             font-weight: bold;
             margin-right: 10px;
           }
@@ -166,7 +166,7 @@ h1 {
           }
         }
         .key-text {
-          font-size: 1vw;
+          font-size: clamp(10px, 1vw, 16px);
           font-weight: bold;
         }
       }
