@@ -48,7 +48,7 @@ h1 {
           align-items: center;
           gap: 5px;
           input {
-            width: calc(100% / 7);;
+            width: 60px;
             height: 60px;
             background-color: white;
             text-align: center;
@@ -79,7 +79,6 @@ h1 {
             font-size: 25px;
             font-weight: bold;
             margin-right: 10px;
-            width: calc(100% / 7);
           }
         }
         .disabled-inputs {
@@ -197,8 +196,9 @@ footer {
     .guess-area {
       .inputs {
         > div {
-          input {
-            width: 10%;
+          input,
+          span {
+            width: calc(100% / 7)
           }
         }
       }
