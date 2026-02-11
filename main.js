@@ -11,7 +11,7 @@ let numberOfHints = 2;
 
 //Manage Words 
 let wordToGuess = "";
-const words = ["Create", "Update", "Delete", "Master", "Branch", "Mainly", "Elzero", "School"];
+const words = ["Create", "Update", "Delete", "Master", "Branch", "Mainly", "samara", "School"];
 wordToGuess = words[Math.floor(Math.random() * words.length)].toUpperCase();
 let messageArea = document.querySelector(".message");
 
