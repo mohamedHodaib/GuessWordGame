@@ -2,6 +2,9 @@
 
 A fun and interactive word guessing game built with HTML, CSS, and JavaScript. Players have 6 attempts to guess a 6-letter word with the help of hints and color-coded feedback.
 
+##Demo
+-**Live Demo**: [Demo](https://mohamedhodaib.github.io/GuessWordGame/)
+
 ## Game Features
 
 - **6 Attempts**: Players get 6 tries to guess the correct word
