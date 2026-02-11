@@ -197,6 +197,13 @@ footer {
 
     .guess-area {
       align-items: center;
+      .inputs {
+        > div {
+          input {
+            width: 10%;
+          }
+        }
+      }
     }
   }
 }
