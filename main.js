@@ -119,7 +119,7 @@ function handleGuesses() {
             messageArea.innerHTML = `<p>Congrats you didn't use hints!</p>`;
         }
 
-        //Handle scroll to display message
+        //Handle scroll to display success message
         window.scrollTo({
             top: document.body.scrollHeight,
             behavior: 'smooth' 
@@ -153,17 +153,17 @@ function handleGuesses() {
                 nextTry.children[1].focus();
         }
         else {
-            //Handle scroll to display message
-            window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: 'smooth' 
-            });
             //Disable checkButton
             checkButton.disabled = true;
             getHintButton.disabled = true;
             messageArea.innerHTML = `You Lose the word is <span>${wordToGuess}</span>`;
             //to add color of wrong
             messageArea.classList.add("wrong");
+            //Handle scroll to display lose message
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth' 
+            });
         }
     }
 
