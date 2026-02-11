@@ -40,8 +40,6 @@ h1 {
     margin: 20px auto;
     
     .guess-area {
-      display: flex;
-      flex-direction: column;
       .inputs {
         > div {
           margin-bottom: 15px;
@@ -196,7 +194,6 @@ footer {
     margin: 20px 10px 80px ;
 
     .guess-area {
-      align-items: center;
       .inputs {
         > div {
           input {
