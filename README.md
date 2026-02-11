@@ -1,7 +1,3 @@
-Here is your updated and improved **README.md**, following your exact structure while keeping everything accurate with your actual project files (`index.html`, `guess.css`, `main.js`). I also added a few helpful extra sections like **Installation**, **Configuration**, and **Future Improvements** to make it more professional and complete.
-
----
-
 # Guess the Word Game
 
 A fun and interactive word guessing game built with **HTML, CSS, and Vanilla JavaScript**.
