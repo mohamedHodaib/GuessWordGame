@@ -1,0 +1,186 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+  --primary-color: tomato ;
+  --wrong-color: red;
+  --correct-color: #18ba89;
+  --semi-correct-color: #f89e13;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.correct {
+  color: var(--correct-color);
+}
+
+.wrong {
+  color: var(--wrong-color);
+}
+
+.guess-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 20px auto;
+    
+    .guess-area {
+      .inputs {
+        > div {
+          margin-bottom: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          input {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            text-align: center;
+            caret-color: var(--primary-color) ;
+            font-size: 50px;
+            border: none;
+            border-bottom: 3px solid #333;
+            &:focus {
+              outline-color: #ccc;
+            }
+
+            &.yes-in-place {
+              color: white;
+              background-color: var(--correct-color);
+            }
+
+            &.not-in-place {
+              color: white;
+              background-color: var(--semi-correct-color);
+            }
+
+            &.not-in-word {
+              color: white;
+              background-color: var(--wrong-color);
+            }
+          }
+          span {
+            font-size: 25px;
+            font-weight: bold;
+            margin-right: 10px;
+          }
+        }
+        .disabled-inputs {
+          opacity: 0.5;
+          pointer-events: none;
+        }
+      }
+      .control {
+        display: flex;
+        gap: 10px;
+        button {
+          font-size: 20px;
+          font-weight: bold;
+          padding: 10px 20px;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+          cursor: pointer;
+        }
+        button:disabled {
+          background-color: black;
+          opacity: 0.4;
+          cursor: no-drop;
+        }
+        .check {
+          background-color: var(--primary-color);
+          flex-grow: 1;
+        }
+        .hint {
+          background-color: var(--correct-color);
+          width: fit-content;
+        }
+      }
+      .message {
+          text-align: center;
+          font-weight: bold;
+          font-size: 30px;
+          margin: 20px 0 80px;
+          span {
+            font-weight: bold;
+            display: block;
+            font-size: 50px;
+            color: var(--primary-color);
+            text-transform: capitalize;
+            margin-top: 10px;
+          }
+          p {
+            margin-top: 15px;
+          }
+      }
+    }
+
+    .key-colors {
+      h2 {
+        padding: 20px;
+        text-align: center;
+      }
+      .key-color {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background-color: white;
+        margin-bottom: 10px;
+        .key {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          &.in-place {
+            background-color: var(--correct-color);
+          }
+          &.not-in-place {
+            background-color: var(--semi-correct-color);
+          }
+          &.not-in-word {
+            background-color: var(--wrong-color);  
+          }
+        }
+        .key-text {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
